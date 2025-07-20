@@ -52,13 +52,16 @@ def monitor_files(file_list):
                 print(f"[ADDED] {file_path} - Hash stored.")
         else:
             check_integrity(file_path, stored_hashes)
-
-# -----------------------
-# 🔧 Example Usage
-# -----------------------
 if __name__ == "__main__":
     files_to_monitor = [
         'example1.txt',
         'example2.txt'
     ]
     monitor_files(files_to_monitor)
+ans=input("Can we close this file?\n")
+if ans=="yes":
+    print("Ok bye")
+elif ans=="no":
+    print("Ok. Run again.")
+else:
+    print("Wrong option.Bye Bye!!")
